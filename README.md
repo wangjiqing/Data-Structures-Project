@@ -4,13 +4,14 @@
 
 ## 一、数组
 
-1. Array(ArrayImpl.java)
+1. Array(ArrayImpl.java) - 数组的实现
 
-## 二、栈
+## 二、栈和队列
 
-2. Stack(ArrayStackImpl.java)
+1. Stack(ArrayStackImpl.java) - 栈的实现
+2. Queue(ArrayQueueImpl.java) - （数组）队列的实现
+3. Queue(LoopQueueImpl.java) - （循环）队列的实现
 
-## 三、队列
+## 三、最基础的动态数据结构：链表
 
-3. Queue(ArrayQueueImpl.java) - 数组队列的实现
-4. Queue(LoopQueueImpl.java) - 循环队列的实现
+1. 
