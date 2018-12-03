@@ -4,6 +4,10 @@ import com.sakura.array.Array;
 import com.sakura.array.impl.ArrayImpl;
 import com.sakura.stack.Stack;
 
+/**
+ * 数组队列实现
+ * @param <E>
+ */
 public class ArrayStackImpl<E> implements Stack<E> {
 
     Array<E> array;
