@@ -1,4 +1,4 @@
-package com.sakura.stack.impl;
+package com.sakura.queue.impl;
 
 import com.sakura.queue.Queue;
 
