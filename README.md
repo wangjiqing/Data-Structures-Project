@@ -15,7 +15,7 @@
 
 ## 三、最基础的动态数据结构：链表
 
-1. LinkedList.java - 最基础的链表结构的实现
+1. SinglyLinkedList.java - 最基础的链表结构的实现
 2. LinkedListStackImpl.java - 基于链表实现的栈
 3. Solution.java、Solution2.java - 基于链表的实际问题（leetcode 203）解决方案
 4. SumArray.java - 基于递归的数组元素求和实例

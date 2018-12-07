@@ -1,6 +1,7 @@
 package com.sakura.stack.impl;
 
 import com.sakura.links.LinkedList;
+import com.sakura.links.impl.SinglyLinkedList;
 import com.sakura.stack.Stack;
 
 /**
@@ -12,7 +13,7 @@ public class LinkedListStackImpl<E> implements Stack<E> {
     private LinkedList<E> list;
 
     public LinkedListStackImpl() {
-        list = new LinkedList<>();
+        list = new SinglyLinkedList<>();
     }
 
     @Override
