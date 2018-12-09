@@ -20,3 +20,7 @@
 3. Solution.java、Solution2.java - 基于链表的实际问题（leetcode 203）解决方案
 4. SumArray.java - 基于递归的数组元素求和实例
 5. Solution3.java - 基于链表递归的实际问题（leetcode 203）解决方案
+
+## 四、二分搜索树
+
+1. Bst.java - 二分搜索树的实现
