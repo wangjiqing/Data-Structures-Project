@@ -208,6 +208,23 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
     }
 
     @Override
+    public void removeElement(E e) {
+        Node prev = dummeyHead;
+        while(prev.next != null){
+            if(prev.next.e.equals(e))
+                break;
+            prev = prev.next;
+        }
+
+        if(prev.next != null){
+            Node delNode = prev.next;
+            prev.next = delNode.next;
+            delNode.next = null;
+            size --;
+        }
+    }
+
+    @Override
     public String toString() {
         StringBuilder res = new StringBuilder("SinglyLinkedList: Head [ ");
         Node cur = dummeyHead.next;

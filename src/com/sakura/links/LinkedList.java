@@ -27,4 +27,7 @@ public interface LinkedList<E> {
     E removeFirst();
 
     E removeLast();
+
+    void removeElement(E e);
+
 }
