@@ -29,3 +29,5 @@
 
 1. BstSet.java - 基于二分搜索树实现的Set集合
 2. LinkedListSet.java - 基于链表实现的Set集合
+3. LinkedListMap.java - 基于链表实现Map映射
+4. BstMap.java - 基于二分搜索树实现Map映射
