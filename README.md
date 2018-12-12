@@ -31,3 +31,8 @@
 2. LinkedListSet.java - 基于链表实现的Set集合
 3. LinkedListMap.java - 基于链表实现Map映射
 4. BstMap.java - 基于二分搜索树实现Map映射
+
+## 六、堆和优先队列
+
+1. PriorityQueueImpl.java - 基于动态数组的优先队列的实现
+2. MaxHeap.java - 最大堆

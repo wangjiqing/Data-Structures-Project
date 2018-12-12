@@ -107,4 +107,11 @@ public interface Array<E> {
      * @return
      */
     int removeElement(E e);
+
+    /**
+     * 元素位置交换
+     * @param i
+     * @param j
+     */
+    void swap(int i, int j);
 }
