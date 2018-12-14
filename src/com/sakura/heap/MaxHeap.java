@@ -44,6 +44,76 @@ public class MaxHeap<E extends Comparable<E>> {
     }
 
     /**
+     * 移除最大元素
+     * @return
+     */
+    public E extractMax() {
+        E ret = findMax();
+
+        data.swap(0, data.getSize() - 1);
+        data.removeLast();
+
+        siftDown(0);
+
+        return ret;
+    }
+
+    /**
+     * 堆中元素的下沉
+     * @param k
+     */
+    private void siftDown(int k) {
+        while (leftChild(k) < data.getSize()) {
+            int j = leftChild(k);
+            if (j + 1 < data.getSize() && data.get(j + 1).compareTo(data.get(j)) > 0) {
+                j = rightChild(k);
+            }
+
+            // data[j] 是 leftChild 和 rightChild 中最大值
+            if (data.get(k).compareTo(data.get(j)) >= 0) {
+                break;
+            } else {
+                data.swap(k, j);
+                k = j;
+            }
+        }
+    }
+
+    /**
+     * 查找最大元素
+     * @return
+     */
+    public E findMax() {
+        if (!data.isEmpty()) {
+            return data.get(0);
+        }
+        throw new IllegalArgumentException("Can not findMax when heap is empty");
+    }
+
+    /**
+     * 取出堆中的最大元素，并且替换成元素e
+     * @param e
+     * @return
+     */
+    public E replace(E e) {
+        E ret = findMax();
+        data.set(0, e);
+        siftDown(0);
+        return ret;
+    }
+
+    /**
+     * heapify
+     * @param arr
+     */
+    public MaxHeap(E[] arr) {
+        data = new ArrayImpl<>(arr);
+        for (int i = parent(arr.length - 1); i >= 0; i--) {
+            siftDown(i);
+        }
+    }
+
+    /**
      * 返回完全二叉堆的数组表示中，一个索引所表示的元素的父亲节点的索引
      * @param index
      * @return

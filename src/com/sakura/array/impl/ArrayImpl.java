@@ -17,6 +17,14 @@ public class ArrayImpl<E> implements Array<E> {
         this.size = 0;
     }
 
+    public ArrayImpl(E[] arr) {
+        data = (E[]) new Object[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            data[i] = arr[i];
+            size = arr.length;
+        }
+    }
+
     /**
      * 无参构造函数，默认数组的容量capacity为10
      */
