@@ -36,3 +36,6 @@
 
 1. PriorityQueueImpl.java - 基于动态数组的优先队列的实现
 2. MaxHeap.java - 最大堆
+
+## 七、线段树
+1. SegmentTree.java - 线段树的实现
