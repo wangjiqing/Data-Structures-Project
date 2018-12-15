@@ -61,13 +61,12 @@ public class MaxHeapTest {
         Integer[] testData = new Integer[n];
         for (int i = 0; i < n; i++) {
             testData[i] = random.nextInt(Integer.MAX_VALUE);
-
-            double time1 = testHeap(testData, false);
-            System.out.println("Without heapify: " + time1 + " s");
-
-            double time2 = testHeap(testData, true);
-            System.out.println("With heapify: " + time2 + " s");
         }
+        double time1 = testHeap(testData, false);
+        System.out.println("Without heapify: " + time1 + " s");
+
+        double time2 = testHeap(testData, true);
+        System.out.println("With heapify: " + time2 + " s");
     }
 
 }
