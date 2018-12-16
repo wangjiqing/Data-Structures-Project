@@ -39,3 +39,10 @@
 
 ## 七、线段树
 1. SegmentTree.java - 线段树的实现
+
+## 八、Trie 字典树/前缀树
+1. Trie.java - 字典树的实现
+2. MapSum.java
+3. WordDictionary.java
+
+## 九、并查集
