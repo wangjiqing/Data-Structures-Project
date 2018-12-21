@@ -47,3 +47,6 @@
 
 ## 九、并查集
 1. UF.java - 并查集接口
+
+## 十、AVL Tree
+1. AvlTree.java - 
